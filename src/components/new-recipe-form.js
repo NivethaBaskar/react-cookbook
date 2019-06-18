@@ -13,7 +13,7 @@ class NewRecipeForm extends Component {
 			procedure:'',
 		}
 
-		this.recipeToEdit ={};
+		this.recipeToEdit = null;
 
 		this.handleSubmit = this.handleSubmit.bind(this);
 		this.isExistingRecipe = this.isExistingRecipe.bind(this);
