@@ -8,7 +8,8 @@ import AddRecipe from './components/add-recipe';
 import originalRecipes from './data/original-recipes';
 
 // var localStorageTest = originalRecipes;
-
+   var ip = window.location.host;
+    
 class App extends Component {
 	constructor(props) {
 		super(props);
@@ -88,7 +89,7 @@ class App extends Component {
 				<div id="new-container"></div>
 				<div className="App-header">
 				{/* <img src={logo} className="App-logo" alt="logo" /> */}
-				<h2>My Cookbook</h2>
+				<h2>My Cookbook from {ip}</h2>
 			</div>
 				<div id="root"></div>
 				<IndexView
